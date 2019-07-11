@@ -1,4 +1,5 @@
 # FreeRTOS
+`The FreeRTOS download includes source code for every processor port, and every demo application. Placing all the ports in a single download greatly simplifies distribution, but the number of files may seem daunting. The directory structure is however very simple, and the FreeRTOS real time kernel is contained in just 3 files (additional files are required if software timer, event group or co-routine functionality is required).`
 ### Task
 ### Schelduling 
 ### Queue Management 
