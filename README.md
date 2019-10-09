@@ -47,3 +47,25 @@ This type of RTOS has certain time constraints which are not strict and it may c
 Example for firm RTOS is automated visual inspection in industrial automation. This system examines and detects the defected parts of assembly line. This type is also called event response system.
 
 In short RTOS based system is a time critical system where most of the tasks are completed in time so that most of the deadly events are reduced.
+
+## Why use an RTOS?
+There are well-established techniques for writing good embedded software without the use of an RTOS. In some cases, these techniques may provide the most appropriate solution; however as the solution becomes more complex, the benefits of an RTOS become more apparent. These include:
+
+Priority Based Scheduling: The ability to separate critical processing from non-critical is a powerful tool.
+
+Abstracting Timing Information: The RTOS is responsible for timing and provides API functions. This allows for cleaner (and smaller) application code.
+
+Maintainability/Extensibility: Abstracting timing dependencies and task based design results in fewer interdependencies between modules. This makes for easier maintenance.
+
+Modularity: The task based API naturally encourages modular development as a task will typically have a clearly defined role.
+
+Promotes Team Development: The task-based system allows separate designers/teams to work independently on their parts of the project.
+
+Easier Testing: Modular task based development allows for modular task based testing.
+
+Code Reuse: Another benefit of modularity is that similar applications on similar platforms will inevitably lead to the development of a library of standard tasks.
+
+Improved Efficiency: An RTOS can be entirely event driven; no processing time is wasted polling for events that have not occurred.
+
+Idle Processing: Background or idle processing is performed in the idle task. This ensures that things such as CPU load measurement, background CRC checking etc will not affect the main processing.
+
