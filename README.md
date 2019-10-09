@@ -19,3 +19,31 @@ Latency is a problem with GPOS but it is overcome using real time OS.
 Priority inversion cannot be done in GPOS, it is done with real time kernel.
 Jitter i.e. timing error in task is not present in real time OS, present in GPOS.
 The mathematical relation cannot be defined for GPOS, for a real time OS mathematical equation can be defined.
+
+## TYPES OF REAL TIME OPERATING SYSTEM
+Depending upon the nature of application real time OS are designed and they are classified into 3 types:
+
+SOFT REAL TIME OPERATING SYSTEM
+Soft real time OS is a type of OS where certain deadlines may be missed, they will respond at a time t=0+.
+
+Soft real time systems are not constrained to extreme rules. The critical time of the soft real time may be delayed to some extent. The expected latency between the tasks and time constraints may be deviated.
+
+The preemption period for a soft real time task is about few milliseconds.
+
+EXAMPLES
+Digital camera, mobile phones, online data base etc.
+
+HARD REAL TIME OPERATING SYSTEM
+Hard real time OS is a type of OS we can predict the deadline, they will respond at a time t=0. Hard real time systems are constrained to predicted time constraints, deadlines and latency.
+
+EXAMPLES:
+Air bag control in cars, anti-lock brake, engine control system etc.
+
+The preemption period for hard real time system is almost less than few microseconds.
+
+FIRM REAL TIME OPERATING SYSTEM
+This type of RTOS has certain time constraints which are not strict and it may cause undesired effect.
+
+Example for firm RTOS is automated visual inspection in industrial automation. This system examines and detects the defected parts of assembly line. This type is also called event response system.
+
+In short RTOS based system is a time critical system where most of the tasks are completed in time so that most of the deadly events are reduced.
